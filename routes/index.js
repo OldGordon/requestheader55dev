@@ -9,9 +9,6 @@ router.get('/', function(req, res) {
       pattern = software.match(/(\([^)]*\)).*?/);
       software = pattern[0].slice(1, -1);
       language = language[0];
-
-
-  console.log( ip, software, language);
   var header = {
                   "ipaddress": ip ,
                   "language": language,
