@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodejs ./bin/www"
   },
   "dependencies": {
@@ -13,5 +14,10 @@
     "express": "~4.0.0",
     "morgan": "~1.0.0",
     "serve-favicon": "^2.3.0"
-  }
+  },
+  "author": "Toni Julia",
+  "license": "ISC",
+  "engines": {
+   "node": "4.2.6"
+ }
 }
