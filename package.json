@@ -1,22 +1,28 @@
 {
   "name": "fccrequestheader",
   "version": "1.0.0",
+  "description": "FCC Api Projects Request Header",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodejs ./bin/www"
+    "start": "nodejs ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "body-parser": "~1.0.0",
-    "cookie-parser": "~1.0.1",
-    "ejs": "~0.8.5",
-    "express": "^4.14.0",
-    "morgan": "~1.0.0",
-    "serve-favicon": "^2.3.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OldGordon/requestheader55dev.git"
   },
-  "author": "Toni Julia",
+  "author": "",
   "license": "ISC",
-  "engines": {
-  "node": "4.2.6",
-  "npm": "3.5.2"
- }
+  "bugs": {
+    "url": "https://github.com/OldGordon/requestheader55dev/issues"
+  },
+  "homepage": "https://github.com/OldGordon/requestheader55dev#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "morgan": "^1.7.0",
+    "path": "^0.12.7",
+    "serve-favicon": "^2.3.0"
+  }
 }
