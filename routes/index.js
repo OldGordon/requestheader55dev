@@ -1,14 +1,19 @@
 var express = require('express');
 var router = express.Router();
-
+//var ip = req.app.get('ip');
 /* GET home page. */
+
 router.get('/', function(req, res) {
-  var ip = req.header['x-forwarded-for'] || req.connection.remoteAddress,
+
+  //console.log(ip);
+  var ip = req.headers['x-forwarded-for'] || req.headers['X-Forwarded-For'] || req.connection.remoteAddress,
       language = req.acceptsLanguages(),
       software = req.get('User-Agent'),
       pattern = software.match(/(\([^)]*\)).*?/);
       software = pattern[0].slice(1, -1);
       language = language[0];
+      if(ip) ip = ip.substring(ip.length - 9);
+
   var header = {
                   "ipaddress": ip ,
                   "language": language,
