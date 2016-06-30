@@ -8,6 +8,7 @@ var bodyParser = require('body-parser');
 var http = require('http');
 var routes = require('./routes/index');
 var users = require('./routes/users');
+var api = require('./routes/api');
 /*var ip = http.get({'host': 'api.ipify.org', 'port': 80, 'path': '/'}, function(resp) {
     resp.on('data', function(ip) {
     console.log("My public IP address is: " + ip);
