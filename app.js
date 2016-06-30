@@ -30,12 +30,9 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 app.use(cookieParser());
-
-
 app.use('/', routes);
 app.use('/users', users);
 app.use('/api', api);
-
 /// catch 404 and forwarding to error handler
 app.use(function(req, res, next) {
     var err = new Error('Not Found');
