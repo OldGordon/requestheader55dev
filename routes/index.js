@@ -12,7 +12,8 @@ router.get('/', function(req, res) {
       pattern = software.match(/(\([^)]*\)).*?/);
       software = pattern[0].slice(1, -1);
       language = language[0];
-      if(ip) ip = ip.substring(ip.length - 9);
+      console.log(ip);
+      if(ip) ip = ip.substring(7 , ip.length);
 
   var header = {
                   "ipaddress": ip ,
