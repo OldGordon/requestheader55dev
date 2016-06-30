@@ -13,7 +13,7 @@ router.get('/', function(req, res) {
       software = pattern[0].slice(1, -1);
       language = language[0];
       console.log(ip);
-      if(ip) ip = ip.substring(7 , ip.length);
+      //if(ip) ip = ip.substring(7 , ip.length);
 
   var header = {
                   "ipaddress": ip ,
